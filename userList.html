@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>新增用户</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+    <div id="top">
+        <label class="title">新增&编辑用户信息</label>
+    </div>
+    <form action="#" method="post">
+        <div id="upload">
+            <img id="preview" />
+            <br />
+            <input type="file" name="file" onchange="imgPreview(this)" />
+        </div>
+        <div id="all">
+            <div id="info">
+                <label class="userInfo">用户名称:
+                    <input type="text" name="user_name" class="long" value="">
+                </label>
+                <label class="userInfo">登录密码:
+                    <input type="password" name="user_password" class="long" value="">
+                </label>
+                <label class="userInfo">重复密码:
+                    <input type="password" name="sure_sure_password" class="long">
+                </label>
+                <label class="userInfo">电子邮件:
+                    <input type="email" name="user_email" class="long">
+                </label>
+                <label class="userInfo">出生日期:
+                    <input type="date" name="user_date" class="long">
+                </label>
+                <label class="userInfo">性&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;别:
+                    <input type="radio" name="user_sex" value="man">男&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="radio" name="user_sex" value="woman">女
+                </label>
+                <label class="userInfo">职&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;业:
+                    <select class="long" name="user_job">
+                        <option value="student">学生</option>
+                        <option value="teacher">教师</option>
+                        <option value="programmer">程序猿</option>
+                    </select>
+                </label>
+                <label class="userInfo">爱&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;好:
+                    <textarea class="long">
+                        书法 乐器 编程 运动
+                    </textarea>
+                </label>
+            </div>
+            <hr class="underLine">
+            <div class="btn">
+                <button type="submit" class="save">保存</button>
+                <button type="reset" class="rest">重置</button>
+                <button type="button" class="return">返回</button>
+            </div>
+        </div>
+    </form>
+    <footer> Copyright&copy;2017.轻实训版权所有</footer>
+    <script type="text/javascript" src="plugins/air-datepicker/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="js/common.js"></script>
+</body>
+
+</html>
